@@ -2,12 +2,25 @@
 eCommerce API built with JavaScript (Express/ Node)
 
 # Project Settings
-You will need to have a file .env in the root of this project with the following constants:
 
-SERVER_PORT=
+## .env
+This file should contains the environment variables used on our application and this file should be created on the root of the project.
+Since this file has sensitive information do not share it with anyone.
 
-NODE_ENV=development
+SERVER_PORT=  
+NODE_ENV=development  
+MAIL_PASSWORD=  
+DEBUG=app:*  
 
-MAIL_PASSWORD=
+## Using a MongoDB linux image
+You need to create a volume first.
 
-DEBUG=app:*
+```
+docker volume create --name=mongodata
+```
+
+Than run the following command, please define a user name and password replacing the values of mongoadmin and secret for production environment.
+```
+docker run --name some-mongo -v mongodata:/data/db -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret -d mongo
+```
+For more information in how to use a MongoDB image please check it [here](https://hub.docker.com/_/mongo).
