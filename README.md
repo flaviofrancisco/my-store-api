@@ -15,8 +15,9 @@ MAIL_PASSWORD=123456
 DEBUG=app:*  
 MONGODB_CONN=mongodb://root:example@localhost:27017  
 
-## Using a Docker MongoDB linux image
-You need to create a volume first.
+## Using a Docker MongoDB linux image  
+
+Run the following command:
 
 ```
 docker-compose -f stack.yml up
