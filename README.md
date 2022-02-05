@@ -17,15 +17,20 @@ This project will have the following scope:
     * User management  
         * Users grid form.    
             - User entry form. 
+        * Roles grid form
+            - Role form            
 
     * Order management  
         * Orders grid form.    
             - Order entry form. 
 
     * Products page (Home page)  
+        * Products search.
         * Product page.    
             - Reviews. 
             - Product avaliation (stars). 
+            - Cart button
+            - Quantity field
                         
 
 
