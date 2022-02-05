@@ -1,6 +1,36 @@
 # my-store-api
 eCommerce API built with JavaScript (Express/ Node)
 
+# Project Scope
+
+This project will have the following scope:
+
+- Product management:
+
+    * Products grid form.
+        * Product entry form.  
+            - Product variation form.
+
+    * Products categories management
+        * Product category entry form.            
+
+    * User management  
+        * Users grid form.    
+            - User entry form. 
+
+    * Order management  
+        * Orders grid form.    
+            - Order entry form. 
+
+    * Products page (Home page)  
+        * Product page.    
+            - Reviews. 
+            - Product avaliation (stars). 
+                        
+
+
+
+
 # Project Settings
 
 ## .env
@@ -25,7 +55,7 @@ docker-compose -f stack.yml up
 
 For more information in how to use a MongoDB image please check it [here](https://hub.docker.com/_/mongo).
 
-## Build and run the projec:  
+## Build and run the project locally:  
 
 Once everything is set up just run the following commands  
 
