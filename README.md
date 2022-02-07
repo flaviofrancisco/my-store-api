@@ -70,7 +70,7 @@ $ npm run serve-debug
 ```
 
 ## Sources:
-[Koa JS CRUD Backend Implementation](https://github.com/daniloab/koa-crud-backend)  
 [The Ultimate Guide to setting up Node.js with TypeScript and Express](https://ultimatecourses.com/blog/setup-typescript-nodejs-express)  
 [TypeScript Node Starter](https://github.com/microsoft/TypeScript-Node-Starter)  
+[Koa JS CRUD Backend Implementation](https://github.com/daniloab/koa-crud-backend)  
 

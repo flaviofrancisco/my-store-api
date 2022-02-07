@@ -21,6 +21,6 @@ export interface IAttribute extends Document {
     isDeleted: boolean    
 }
 
-const AttributeModel: Model<IAttribute> = mongoose.model("Attribute", AttributeSchema);
+const Attribute: Model<IAttribute> = mongoose.model("Attribute", AttributeSchema);
 
-export default AttributeModel;
+export default Attribute;

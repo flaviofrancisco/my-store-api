@@ -5,5 +5,5 @@ dotenv.config({ path: path.resolve(__dirname, "../.env") });
 console.log(path.resolve(__dirname, "../.env"));
 
 export const config = {
-    mongodbConnectionString: process.env.MONGODB_CONN
+    mongodbConnectionString: process.env.MONGODB_CONN || ''
 }

@@ -2,16 +2,14 @@
   "name": "my-store-api",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "build": "rimraf dist && tsc",
     "preserve": "npm run build",
     "serve": "cross-env NODE_ENV=development concurrently \"tsc --watch\" \"nodemon -q dist/index.js\"",
-    "serve-debug": "nodemon --inspect dist/index.js",
     "prestart": "npm run build",
     "start": "cross-env NODE_ENV=production node dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "tsc --noEmit && eslint \"**/*.{js,ts}\" --quiet --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -32,8 +30,7 @@
     "@typescript-eslint/eslint-plugin": "^5.10.2",
     "@typescript-eslint/parser": "^5.10.2",
     "concurrently": "^7.0.0",
-    "eslint": "^8.8.0",
-    "nodemon": "^2.0.15",
+    "eslint": "^8.8.0",    
     "typescript": "^4.5.5"
   },
   "dependencies": {
@@ -47,6 +44,7 @@
     "helmet": "^5.0.2",
     "mongoose": "^6.1.8",
     "morgan": "^1.10.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "nodemon": "2.0.15"
   }
 }
